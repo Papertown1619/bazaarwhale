@@ -1,7 +1,6 @@
+# CampusConnect Marketplace
 
-# BazaarWhale Marketplace
-
-BazaarWhale is an online marketplace platform, similar to OLX, where users can buy and sell items in their local community.
+CampusConnect is an online marketplace platform where users can buy and sell items in their campus community.
 
 ## Tech Stack
 
@@ -29,7 +28,7 @@ BazaarWhale is an online marketplace platform, similar to OLX, where users can b
 
 ### Database Setup
 
-1. Create a MySQL database named `bazaarwhale`
+1. Create a MySQL database named `campusconnect`
 2. Update the database credentials in `src/main/resources/application.properties` if needed
 
 ### Running the Application
@@ -37,7 +36,7 @@ BazaarWhale is an online marketplace platform, similar to OLX, where users can b
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd bazaarwhale
+cd campusconnect
 
 # Build the project
 mvn clean install
@@ -50,7 +49,7 @@ The application will be available at `http://localhost:8080`
 
 ## Project Structure
 
-- `src/main/java/com/bazaarwhale/marketplace` - Java source files
+- `src/main/java/com/campusconnect/marketplace` - Java source files
   - `config` - Configuration classes
   - `controller` - MVC controllers
   - `model` - Entity classes

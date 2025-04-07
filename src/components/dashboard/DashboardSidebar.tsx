@@ -28,7 +28,7 @@ export function DashboardSidebar() {
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-2">
           <ShoppingCart className="size-6 text-marketplace-600" />
-          <h2 className="text-xl font-bold">Marketplace</h2>
+          <h2 className="text-xl font-bold">CampusConnect</h2>
         </div>
       </SidebarHeader>
       

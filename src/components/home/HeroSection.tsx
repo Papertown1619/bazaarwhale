@@ -8,10 +8,10 @@ export function HeroSection() {
       <div className="container relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-            Buy & Sell Anything <br /> in Your Community
+            Buy & Sell Anything <br /> in Your Campus
           </h1>
           <p className="mt-4 text-lg text-white/80 md:text-xl">
-            Join BazaarWhale, your local online marketplace for finding great deals
+            Join CampusConnect, your campus online marketplace for finding great deals
             and selling items you no longer need.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">

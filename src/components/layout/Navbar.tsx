@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,7 +21,7 @@ export function Navbar() {
           </Button>
           <Link to="/" className="flex items-center gap-2">
             <ShoppingBag className="h-6 w-6 text-marketplace-600" />
-            <span className="text-xl font-bold text-marketplace-600">BazaarWhale</span>
+            <span className="text-xl font-bold text-marketplace-600">CampusConnect</span>
           </Link>
         </div>
 
@@ -51,7 +50,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Search */}
       <div className="container md:hidden pb-3">
         <div className="relative">
           <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -59,7 +57,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="container md:hidden py-3 border-t">
           <nav className="flex flex-col space-y-2">

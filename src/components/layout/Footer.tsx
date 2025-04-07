@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
@@ -8,9 +7,9 @@ export function Footer() {
       <div className="container py-10">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div>
-            <h3 className="text-lg font-semibold">BazaarWhale</h3>
+            <h3 className="text-lg font-semibold">CampusConnect</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Buy and sell items easily on our local marketplace platform.
+              Buy and sell items easily on our campus marketplace platform.
             </p>
             <div className="mt-4 flex space-x-3">
               <Link to="#" className="text-muted-foreground hover:text-marketplace-600">
@@ -58,7 +57,7 @@ export function Footer() {
         
         <div className="mt-10 border-t pt-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} BazaarWhale. All rights reserved.
+            © {new Date().getFullYear()} CampusConnect. All rights reserved.
           </p>
         </div>
       </div>
