@@ -32,6 +32,7 @@ public class Product {
     @Column(nullable = false)
     private String category;
     
+    @Column(name = "product_condition")
     private String condition;
     
     @ElementCollection
