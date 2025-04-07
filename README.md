@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
 
-## Project info
+# BazaarWhale Marketplace
 
-**URL**: https://lovable.dev/projects/2e323560-9ee8-4a51-a71e-88ae4effa032
+BazaarWhale is an online marketplace platform, similar to OLX, where users can buy and sell items in their local community.
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+- **Backend**: Java with Spring Boot
+- **Frontend**: HTML, CSS, JavaScript with Thymeleaf templating
+- **Database**: MySQL
+- **Build Tool**: Maven
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2e323560-9ee8-4a51-a71e-88ae4effa032) and start prompting.
+- User registration and authentication
+- Product listings with multiple images
+- Search and filter products by category
+- User dashboard to manage listings
+- Messaging system between buyers and sellers
+- Responsive design for mobile and desktop
 
-Changes made via Lovable will be committed automatically to this repo.
+## Setup Instructions
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Java 17 or higher
+- MySQL 8.0
+- Maven
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Database Setup
 
-Follow these steps:
+1. Create a MySQL database named `bazaarwhale`
+2. Update the database credentials in `src/main/resources/application.properties` if needed
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Running the Application
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Clone the repository
+git clone <repository-url>
+cd bazaarwhale
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Build the project
+mvn clean install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Run the application
+mvn spring-boot:run
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+- `src/main/java/com/bazaarwhale/marketplace` - Java source files
+  - `config` - Configuration classes
+  - `controller` - MVC controllers
+  - `model` - Entity classes
+  - `repository` - Spring Data JPA repositories
+  - `service` - Business logic
+- `src/main/resources` - Configuration and static resources
+  - `static` - CSS, JavaScript, and images
+  - `templates` - Thymeleaf templates
+  - `application.properties` - Application configuration
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contributing
 
-## What technologies are used for this project?
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This project is built with .
+## License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2e323560-9ee8-4a51-a71e-88ae4effa032) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
