@@ -7,7 +7,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarMenuLabel,
+  SidebarGroupLabel,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Link } from "react-router-dom";
@@ -25,7 +25,7 @@ export function DashboardSidebar() {
       
       <SidebarContent className="px-4 py-6">
         <SidebarMenu>
-          <SidebarMenuLabel>Dashboard</SidebarMenuLabel>
+          <SidebarGroupLabel>Dashboard</SidebarGroupLabel>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link to="/dashboard" className="flex w-full items-center gap-2">
@@ -55,7 +55,7 @@ export function DashboardSidebar() {
         </SidebarMenu>
         
         <SidebarMenu className="mt-6">
-          <SidebarMenuLabel>Account</SidebarMenuLabel>
+          <SidebarGroupLabel>Account</SidebarGroupLabel>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link to="/dashboard/profile" className="flex w-full items-center gap-2">
